@@ -123,7 +123,7 @@ Style/PreferredHashMethods:
 
 Style/Documentation:
   Description: "Document classes and non-namespace modules."
-  Enabled: true
+  Enabled: false
 
 Layout/DotPosition:
   Description: "Checks the position of the dot in multi-line method calls."

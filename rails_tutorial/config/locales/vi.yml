@@ -1,0 +1,46 @@
+vi:
+  english: "Tiếng Anh"
+  vietnamese: "Tiếng Việt"
+  sign_up: "Đăng ký"
+  home: "Trang chủ"
+  help: "Trợ giúp"
+  log_in: "Đăng nhập"
+  user: "Người dùng"
+  submit: "Xác nhận"
+
+  layouts:
+    application:
+      base_title: "Ứng dụng mẫu hướng dẫn Rails"
+
+  static_pages:
+    help:
+      title: "Trợ giúp"
+      rails_tutorial_help: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
+      rails_tutorial_help_link: "Trang trợ giúp Hướng dẫn Rails"
+      sample_app_help: "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem"
+      ruby_on_rails_tutorial_book: "sách Hướng dẫn Ruby on Rails"
+    home:
+      title: "Chào mừng bạn đến với ứng dụng mẫu"
+      rails_tutorial_home: "Đây là trang chủ của"
+      rails_tutorial_link: "Hướng dẫn Ruby on Rails"
+      sample_app: "ứng dụng mẫu"
+
+  users:
+    show: "Xem chi tiết"
+    new_user: "Tạo người dùng mới"
+    edit: "Chỉnh sửa"
+    destroy: "Xóa bỏ"
+    name: "Tên"
+    email: "Email"
+    back: "Quay lại danh sách"
+    msg_create: "Người dùng đã được tạo thành công."
+    msg_update: "Người dùng đã được cập nhật thành công."
+    msg_destroy: "Người dùng đã được hủy thành công."
+
+  activerecord:
+    models:
+      user: "Người dùng"
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
