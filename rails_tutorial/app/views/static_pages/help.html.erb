@@ -1,0 +1,13 @@
+<% provide :title, t(".title", default: t("helpers.page_title.help")) %>
+
+<h1><%= t(".title") %></h1>
+<p>
+  <%= t(".rails_tutorial_help") %>
+  <%= link_to "http://www.railstutorial.org/help" do %>
+    <%= t(".rails_tutorial_help_link") %>
+  <% end %>.
+  <%= t(".sample_app_help") %>
+  <%= link_to "http://www.railstutorial.org/book" do %>
+    <em><%= t(".ruby_on_rails_tutorial_book") %></em>
+  <% end %>.
+</p>
