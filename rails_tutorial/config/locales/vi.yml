@@ -7,6 +7,11 @@ vi:
   log_in: "Đăng nhập"
   user: "Người dùng"
   submit: "Xác nhận"
+  confirmation: "Xác nhận mật khẩu"
+  welcome: "Chào mừng bạn đến với ứng dụng mẫu!"
+  not_found_user: "Không tìm thấy người dùng!"
+  the_form_contains: "Biểu mẫu có"
+  error: "lỗi"
 
   layouts:
     application:
@@ -30,12 +35,11 @@ vi:
     new_user: "Tạo người dùng mới"
     edit: "Chỉnh sửa"
     destroy: "Xóa bỏ"
-    name: "Tên"
-    email: "Email"
     back: "Quay lại danh sách"
     msg_create: "Người dùng đã được tạo thành công."
     msg_update: "Người dùng đã được cập nhật thành công."
     msg_destroy: "Người dùng đã được hủy thành công."
+    create_my_account: "Tạo tài khoản của tôi"
 
   activerecord:
     models:
@@ -44,3 +48,21 @@ vi:
       user:
         name: "Tên"
         email: "Email"
+        password: "Mật Khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "không được để trống!"
+              too_long: "của bạn không được dài quá 50 ký tự!"
+            email:
+              blank: "không được để trống!"
+              taken: "đã được sử dụng!"
+              invalid: "không đúng định dạng!"
+              too_long: "của bạn không được vượt quá 255 ký tự!"
+            password:
+              blank: "không được để trống!"
+            password_confirmation:
+              confirmation: "không khớp với Mật khẩu!"

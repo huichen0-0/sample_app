@@ -32,6 +32,9 @@
 en:
   home: "HOME"
   submit: "Submit"
+  sign_up: "Sign up"
+  welcome: "Welcome to the sample app!"
+  not_found_user: "Not found user!"
 
   layouts:
     application:
@@ -55,6 +58,8 @@ en:
     msg_create: "User was successfully created."
     msg_update: "User was successfully updated."
     msg_destroy: "User was successfully destroyed."
+    not_found_user: "Not found user!"
+    create_my_account: "Create my account"
 
   activerecord:
       models:
