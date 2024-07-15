@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: %i(show edit update destroy)
+  before_action :set_user, only: %i(show)
 
   # GET /users or /users.json
   def index
@@ -7,60 +7,27 @@ class UsersController < ApplicationController
   end
 
   # GET /users/1 or /users/1.json
-  def show; end
+  def show
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:warning] = t "not_found_user"
+    redirect_to root_path
+  end
 
   # GET /users/new
   def new
     @user = User.new
   end
 
-  # GET /users/1/edit
-  def edit; end
-
   # POST /users or /users.json
   def create
     @user = User.new(user_params)
-
-    respond_to do |format|
-      if @user.save
-        format.html do
-          redirect_to user_url(@user),
-                      notice: "User was successfully created."
-        end
-        format.json{render :show, status: :created, location: @user}
-      else
-        format.html{render :new, status: :unprocessable_entity}
-        format.json{render json: @user.errors, status: :unprocessable_entity}
-      end
-    end
-  end
-
-  # PATCH/PUT /users/1 or /users/1.json
-  def update
-    respond_to do |format|
-      if @user.update(user_params)
-        format.html do
-          redirect_to user_url(@user),
-                      notice: "User was successfully updated."
-        end
-        format.json{render :show, status: :ok, location: @user}
-      else
-        format.html{render :edit, status: :unprocessable_entity}
-        format.json{render json: @user.errors, status: :unprocessable_entity}
-      end
-    end
-  end
-
-  # DELETE /users/1 or /users/1.json
-  def destroy
-    @user.destroy
-
-    respond_to do |format|
-      format.html do
-        redirect_to users_url,
-                    notice: "User was successfully destroyed."
-      end
-      format.json{head :no_content}
+    if @user.save
+      flash[:success] = t "welcome"
+      redirect_to @user
+    else
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -72,6 +39,7 @@ class UsersController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def user_params
-    params.require(:user).permit(:name, :email)
+    params.require(:user).permit(:name, :email, :password,
+                                 :password_confirmation)
   end
 end
