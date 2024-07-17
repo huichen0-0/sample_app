@@ -30,15 +30,15 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  home: "HOME"
-  submit: "Submit"
-  sign_up: "Sign up"
-  welcome: "Welcome to the sample app!"
-  not_found_user: "Not found user!"
-
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
+
+  sessions:
+    new:
+      log_in: "Log in"
+    create:
+      invalid: "Email or password is incorrect!"
 
   static_pages:
     help:
@@ -48,18 +48,19 @@ en:
       sample_app_help: "To get help on this sample app, see the"
       ruby_on_rails_tutorial_book: "Ruby on RailsTutorial book"
     home:
-      title: "Welcome to the Sample App"
+      title: "Home"
+      welcome_to_sample_app: "Welcome to the Sample App"
       rails_tutorial_home: "This is the home page for the"
       rails_tutorial_link: "Ruby on Rails Tutorial"
       sample_app: "sample application"
 
   users:
-    back: "Back to list"
-    msg_create: "User was successfully created."
-    msg_update: "User was successfully updated."
-    msg_destroy: "User was successfully destroyed."
-    not_found_user: "Not found user!"
-    create_my_account: "Create my account"
+    new:
+      create_my_account: "Create my account"
+    create:
+      welcome: "Welcome to the sample app!"
+    show:
+      not_found_user: "Not found user!"
 
   activerecord:
       models:

@@ -1,21 +1,31 @@
 vi:
-  english: "Tiếng Anh"
-  vietnamese: "Tiếng Việt"
-  sign_up: "Đăng ký"
-  home: "Trang chủ"
-  help: "Trợ giúp"
-  log_in: "Đăng nhập"
-  user: "Người dùng"
-  submit: "Xác nhận"
-  confirmation: "Xác nhận mật khẩu"
-  welcome: "Chào mừng bạn đến với ứng dụng mẫu!"
-  not_found_user: "Không tìm thấy người dùng!"
-  the_form_contains: "Biểu mẫu có"
-  error: "lỗi"
-
   layouts:
     application:
       base_title: "Ứng dụng mẫu hướng dẫn Rails"
+    header:
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      log_in: "Đăng nhập"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      setting: "Cài đặt"
+      log_out: "Đăng xuất"
+
+  sessions:
+    new:
+      new_user?: "Người dùng mới?"
+      sign_up_now!: "Đăng ký ngay!"
+      log_in: "Đăng nhập"
+      password: "Mật Khẩu"
+    create:
+      invalid: "Email hoặc mật khẩu không đúng!"
+
+  shared:
+    error_messages:
+      the_form_contains: "Biểu mẫu chứa"
+      error: "lỗi."
 
   static_pages:
     help:
@@ -25,21 +35,22 @@ vi:
       sample_app_help: "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem"
       ruby_on_rails_tutorial_book: "sách Hướng dẫn Ruby on Rails"
     home:
-      title: "Chào mừng bạn đến với ứng dụng mẫu"
+      title: "Trang chủ"
+      welcome_to_sample_app: "Chào mừng bạn đến với ứng dụng mẫu"
       rails_tutorial_home: "Đây là trang chủ của"
       rails_tutorial_link: "Hướng dẫn Ruby on Rails"
       sample_app: "ứng dụng mẫu"
+      sign_up_now!: "Đăng ký ngay!"
 
   users:
-    show: "Xem chi tiết"
-    new_user: "Tạo người dùng mới"
-    edit: "Chỉnh sửa"
-    destroy: "Xóa bỏ"
-    back: "Quay lại danh sách"
-    msg_create: "Người dùng đã được tạo thành công."
-    msg_update: "Người dùng đã được cập nhật thành công."
-    msg_destroy: "Người dùng đã được hủy thành công."
-    create_my_account: "Tạo tài khoản của tôi"
+    new:
+      confirmation: "Xác nhận mật khẩu"
+      create_my_account: "Tạo tài khoản của tôi"
+      sign_up: "Đăng ký"
+    show:
+      not_found_user: "Không tìm thấy người dùng!"
+    create:
+      welcome: "Chào mừng bạn đến với ứng dụng mẫu!"
 
   activerecord:
     models:
