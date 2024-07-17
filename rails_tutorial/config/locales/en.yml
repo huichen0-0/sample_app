@@ -37,6 +37,7 @@ en:
   sessions:
     new:
       log_in: "Log in"
+      remember_me: "Remember me on this computer"
     create:
       invalid: "Email or password is incorrect!"
 

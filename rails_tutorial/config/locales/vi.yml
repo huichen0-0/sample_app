@@ -19,6 +19,7 @@ vi:
       sign_up_now!: "Đăng ký ngay!"
       log_in: "Đăng nhập"
       password: "Mật Khẩu"
+      remember_me: "Hãy nhớ tôi trên máy tính này"
     create:
       invalid: "Email hoặc mật khẩu không đúng!"
 
