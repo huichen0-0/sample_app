@@ -30,10 +30,14 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-
   warning_login: "Please log in!"
   warning_edit: "You cannot edit this account!"
   warning_not_found: "Not found user!"
+
+  account_activations:
+    edit:
+      success: "Account activated!"
+      fail: "Invalid activation link!"
 
   layouts:
     application:
@@ -47,6 +51,9 @@ en:
       remember_me: "Remember me on this computer"
     create:
       invalid: "Email or password is incorrect!"
+      not_activated: >
+        Account not activated.
+        Check your email for the activation link.
 
   shared:
     error_messages:
@@ -67,6 +74,14 @@ en:
       rails_tutorial_link: "Ruby on Rails Tutorial"
       sample_app: "sample application"
 
+  user_mailer:
+    account_activation:
+      hi: "Hi"
+      click: "Activate"
+      subject: "Account activation"
+      content: >
+        Welcome to the Sample App!
+        Click on the link below to activate your account:
   users:
     index:
       title: "ALL USERS"
@@ -74,9 +89,9 @@ en:
     new:
       title: "SIGN UP"
       heading: "Sign up"
-      create_my_account: "Create my account"
+      submit: "Create my account"
     create:
-      welcome: "Welcome to the sample app!"
+      notification: "Please check your email to activate your account."
     show:
       not_found_user: "Not found user!"
     edit:

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     get "static_pages/help"
     get "/signup", to: "users#new"
     post "/signup", to: "users#create"
-    resources :users, only: %i(new create show edit update index destroy)
+    resources :users
+    resources :account_activations, only: :edit
   end
 end

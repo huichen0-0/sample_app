@@ -1,0 +1,5 @@
+MAILER_HOST: localhost
+MAILER_ADDRESS: mailstrap_address
+MAILER_USERNAME: mailstrap_username
+MAILER_PASSWORD: mailstrap_password
+MAILER_PORT: mailstrap_port
