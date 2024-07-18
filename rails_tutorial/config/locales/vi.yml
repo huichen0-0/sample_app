@@ -1,4 +1,8 @@
 vi:
+  warning_login: "Vui lòng đăng nhập!"
+  warning_edit: "Bạn không thể chỉnh sửa tài khoản này!"
+  warning_not_found: "Không tìm thấy người dùng!"
+
   layouts:
     application:
       base_title: "Ứng dụng mẫu hướng dẫn Rails"
@@ -15,9 +19,11 @@ vi:
 
   sessions:
     new:
+      title: "ĐĂNG NHẬP"
+      heading: "Đăng nhập"
+      submit: "Đăng nhập"
       new_user?: "Người dùng mới?"
       sign_up_now!: "Đăng ký ngay!"
-      log_in: "Đăng nhập"
       password: "Mật Khẩu"
       remember_me: "Hãy nhớ tôi trên máy tính này"
     create:
@@ -26,32 +32,47 @@ vi:
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu chứa"
-      error: "lỗi."
+      errors: "lỗi."
 
   static_pages:
     help:
       title: "Trợ giúp"
+      heading: "Trợ giúp"
       rails_tutorial_help: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
       rails_tutorial_help_link: "Trang trợ giúp Hướng dẫn Rails"
       sample_app_help: "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem"
       ruby_on_rails_tutorial_book: "sách Hướng dẫn Ruby on Rails"
     home:
-      title: "Trang chủ"
-      welcome_to_sample_app: "Chào mừng bạn đến với ứng dụng mẫu"
+      title: "TRANG CHỦ"
+      heading: "Chào mừng đến với ứng dụng mẫu"
       rails_tutorial_home: "Đây là trang chủ của"
       rails_tutorial_link: "Hướng dẫn Ruby on Rails"
       sample_app: "ứng dụng mẫu"
       sign_up_now!: "Đăng ký ngay!"
 
   users:
+    index:
+      title: "TẤT CẢ NGƯỜI DÙNG"
+      heading: "Tất cả người dùng"
     new:
-      confirmation: "Xác nhận mật khẩu"
+      title: "ĐĂNG KÝ"
+      heading: "Đăng ký"
       create_my_account: "Tạo tài khoản của tôi"
-      sign_up: "Đăng ký"
-    show:
-      not_found_user: "Không tìm thấy người dùng!"
     create:
       welcome: "Chào mừng bạn đến với ứng dụng mẫu!"
+    edit:
+      title: "Chỉnh sửa người dùng"
+      heading: "Cập nhật hồ sơ của bạn"
+      submit: "Lưu thay đổi"
+      change: "thay đổi"
+    update:
+      success: "Cập nhật người dùng thành công!"
+    destroy:
+      success: "Xóa người dùng thành công!"
+      fail: "Xóa người dùng thất bại!"
+    user:
+      delete: "Xóa"
+      notice: "Bạn có chắc không?"
 
   activerecord:
     models:
@@ -76,5 +97,6 @@ vi:
               too_long: "của bạn không được vượt quá 255 ký tự!"
             password:
               blank: "không được để trống!"
+              too_short: "phải tối thiểu 6 ký tự!"
             password_confirmation:
               confirmation: "không khớp với Mật khẩu!"

@@ -1,12 +1,12 @@
 <% provide :title, t(".title") %>
 
 <div class="center jumbotron">
-  <h1><%= t(".welcome_to_sample_app") %></h1>
+  <h1><%= t(".heading") %></h1>
   <h2><%= t(".rails_tutorial_home") %>
     <%= link_to "http://www.railstutorial.org/" do %>
       <%= t(".rails_tutorial_link") %>
     <% end %>
   <%= t(".sample_app") %>
   </h2>
-  <%= link_to t(".sign_up_now!"), "#", class: "btn btn-lg btn-primary" %>
+  <%= link_to t(".sign_up_now!"), signup_path, class: "btn btn-lg btn-primary" %>
 </div>

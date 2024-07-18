@@ -30,38 +30,66 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+
+  warning_login: "Please log in!"
+  warning_edit: "You cannot edit this account!"
+  warning_not_found: "Not found user!"
+
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
 
   sessions:
     new:
-      log_in: "Log in"
+      title: "LOG IN"
+      heading: "Log in"
+      submit: "Log in"
       remember_me: "Remember me on this computer"
     create:
       invalid: "Email or password is incorrect!"
 
+  shared:
+    error_messages:
+      errors: "errors"
+
   static_pages:
     help:
-      title: "Help"
+      title: "HELP"
+      heading: "Help"
       rails_tutorial_help: "Get help on the Ruby on Rails Tutorial at the"
       rails_tutorial_help_link: "Rails Tutorial help page"
       sample_app_help: "To get help on this sample app, see the"
       ruby_on_rails_tutorial_book: "Ruby on RailsTutorial book"
     home:
       title: "Home"
-      welcome_to_sample_app: "Welcome to the Sample App"
+      heading: "Welcome to the Sample App"
       rails_tutorial_home: "This is the home page for the"
       rails_tutorial_link: "Ruby on Rails Tutorial"
       sample_app: "sample application"
 
   users:
+    index:
+      title: "ALL USERS"
+      heading: "All users"
     new:
+      title: "SIGN UP"
+      heading: "Sign up"
       create_my_account: "Create my account"
     create:
       welcome: "Welcome to the sample app!"
     show:
       not_found_user: "Not found user!"
+    edit:
+      title: "EDIT USER"
+      heading: "Update your profile"
+      submit: "Save changes"
+    update:
+      success: "Update user successfully!"
+    destroy:
+      success: "Successfully deleted user!"
+      fail: "User deletion failed!"
+    user:
+      notice: "Are you sure?"
 
   activerecord:
       models:
