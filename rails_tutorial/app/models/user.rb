@@ -9,8 +9,13 @@ class User < ApplicationRecord
              length: {maximum: Settings.user.max_email_length},
              format: {with: Regexp.new(Settings.user.email_regex, "i")},
              uniqueness: true
+  validates :password, presence: true,
+             length: {minimum: Settings.user.min_password_length},
+             allow_nil: true
 
   has_secure_password
+
+  scope :desc, ->{order created_at: :desc}
 
   class << self
     def digest string

@@ -46,6 +46,10 @@ gem "bootstrap-sass", "3.4.1"
 gem "sassc-rails"
 
 gem "config"
+
+gem "faker", "2.21.0"
+
+gem "pagy"
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html]
 # gem "image_processing", "~> 1.2"
 
