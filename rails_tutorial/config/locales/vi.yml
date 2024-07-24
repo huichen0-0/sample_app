@@ -3,10 +3,16 @@ vi:
   warning_edit: "Bạn không thể chỉnh sửa tài khoản này!"
   warning_not_found: "Không tìm thấy người dùng!"
 
+  account_activations:
+    edit:
+      success: "Tài khoản đã được kích hoạt!"
+      fail: "Liên kết kích hoạt không hợp lệ!"
+
   layouts:
     application:
       base_title: "Ứng dụng mẫu hướng dẫn Rails"
     header:
+      choose: "Chọn ngôn ngữ"
       english: "Tiếng Anh"
       vietnamese: "Tiếng Việt"
       home: "Trang chủ"
@@ -28,6 +34,9 @@ vi:
       remember_me: "Hãy nhớ tôi trên máy tính này"
     create:
       invalid: "Email hoặc mật khẩu không đúng!"
+      not_activated: >
+        Tài khoản chưa được kích hoạt.
+        Kiểm tra email của bạn để lấy liên kết kích hoạt.
 
   shared:
     error_messages:
@@ -50,6 +59,14 @@ vi:
       sample_app: "ứng dụng mẫu"
       sign_up_now!: "Đăng ký ngay!"
 
+  user_mailer:
+    account_activation:
+      hi: "Xin chào"
+      click: "Kích hoạt"
+      subject: "Kích hoạt tài khoản"
+      content: >
+        Chào mừng bạn đến với Sample App!
+        Ấn vào đường dẫn phía dưới để kích hoạt tài khoản:
   users:
     index:
       title: "TẤT CẢ NGƯỜI DÙNG"
@@ -57,9 +74,9 @@ vi:
     new:
       title: "ĐĂNG KÝ"
       heading: "Đăng ký"
-      create_my_account: "Tạo tài khoản của tôi"
+      submit: "Tạo tài khoản của tôi"
     create:
-      welcome: "Chào mừng bạn đến với ứng dụng mẫu!"
+      notification: "Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn."
     edit:
       title: "Chỉnh sửa người dùng"
       heading: "Cập nhật hồ sơ của bạn"
