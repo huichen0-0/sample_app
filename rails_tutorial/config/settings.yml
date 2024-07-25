@@ -10,3 +10,7 @@ pagy:
 gravatar:
   size_80: 80
   size_50: 50
+
+time:
+  hour:
+    two: 2

@@ -33,6 +33,7 @@ en:
   warning_login: "Please log in!"
   warning_edit: "You cannot edit this account!"
   warning_not_found: "Not found user!"
+  warning_not_valid: "User is in_activated!"
 
   account_activations:
     edit:
@@ -43,6 +44,23 @@ en:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
 
+  password_resets:
+    new:
+      title: "FORGOT PASSWORD"
+      heading: "Forgot Password"
+      submit: "Submit"
+    create:
+      success: "Email sent with password reset instructions!"
+      fail: "Email address not found!"
+    edit:
+      title: "RESET PASSWORD"
+      heading: "Reset password"
+      submit: "Update password"
+    update:
+      expired: "Password reset has expired!"
+      success: "Password has been reset!"
+      error: "can't be empty!"
+
   sessions:
     new:
       title: "LOG IN"
@@ -52,7 +70,7 @@ en:
     create:
       invalid: "Email or password is incorrect!"
       not_activated: >
-        Account not activated.
+        Account has not been activated!
         Check your email for the activation link.
 
   shared:
@@ -68,7 +86,7 @@ en:
       sample_app_help: "To get help on this sample app, see the"
       ruby_on_rails_tutorial_book: "Ruby on RailsTutorial book"
     home:
-      title: "Home"
+      title: "HOME"
       heading: "Welcome to the Sample App"
       rails_tutorial_home: "This is the home page for the"
       rails_tutorial_link: "Ruby on Rails Tutorial"
@@ -77,11 +95,21 @@ en:
   user_mailer:
     account_activation:
       hi: "Hi"
-      click: "Activate"
+      link: "Activate"
       subject: "Account activation"
       content: >
         Welcome to the Sample App!
         Click on the link below to activate your account:
+    password_reset:
+      heading: "Password reset"
+      subject: "Password reset"
+      link: "Password reset link!"
+      content_1: "To reset your password click the link below:"
+      content_2: >
+        This link will expire in two hours.
+        If you did not request your password to be reset,
+        please ignore this email and your password will stay as it is.
+
   users:
     index:
       title: "ALL USERS"

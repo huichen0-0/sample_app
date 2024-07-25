@@ -2,6 +2,7 @@ vi:
   warning_login: "Vui lòng đăng nhập!"
   warning_edit: "Bạn không thể chỉnh sửa tài khoản này!"
   warning_not_found: "Không tìm thấy người dùng!"
+  warning_not_valid: "Người dùng không được kích hoạt!"
 
   account_activations:
     edit:
@@ -23,6 +24,23 @@ vi:
       setting: "Cài đặt"
       log_out: "Đăng xuất"
 
+  password_resets:
+    new:
+      title: "QUÊN MẬT KHẨU"
+      heading: "Quên mật khẩu"
+      submit: "Xác nhận"
+    create:
+      success: "Email đã được gửi kèm theo hướng dẫn đặt lại mật khẩu!"
+      fail: "Không tìm thấy địa chỉ email!"
+    edit:
+      title: "ĐẶT LẠI MẬT KHẨU"
+      heading: "Đặt lại mật khẩu"
+      submit: "Cập nhật mật khẩu"
+    update:
+      expired: "Việc đặt lại mật khẩu đã hết thời gian hiệu lực!"
+      success: "Mật khẩu đã được đặt lại!"
+      error: "không được để trống!"
+
   sessions:
     new:
       title: "ĐĂNG NHẬP"
@@ -32,10 +50,11 @@ vi:
       sign_up_now!: "Đăng ký ngay!"
       password: "Mật Khẩu"
       remember_me: "Hãy nhớ tôi trên máy tính này"
+      forgot_password?: "Quên mật khẩu?"
     create:
       invalid: "Email hoặc mật khẩu không đúng!"
       not_activated: >
-        Tài khoản chưa được kích hoạt.
+        Tài khoản chưa được kích hoạt!
         Kiểm tra email của bạn để lấy liên kết kích hoạt.
 
   shared:
@@ -45,7 +64,7 @@ vi:
 
   static_pages:
     help:
-      title: "Trợ giúp"
+      title: "TRỢ GIÚP"
       heading: "Trợ giúp"
       rails_tutorial_help: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
       rails_tutorial_help_link: "Trang trợ giúp Hướng dẫn Rails"
@@ -62,11 +81,21 @@ vi:
   user_mailer:
     account_activation:
       hi: "Xin chào"
-      click: "Kích hoạt"
+      link: "Kích hoạt"
       subject: "Kích hoạt tài khoản"
       content: >
         Chào mừng bạn đến với Sample App!
         Ấn vào đường dẫn phía dưới để kích hoạt tài khoản:
+    password_reset:
+      heading: "Đặt lại mật khẩu"
+      subject: "Đặt lại mật khẩu"
+      link: "Liên kết đặt lại mật khẩu!"
+      content_1: "Để đặt lại mật khẩu của bạn hãy nhấp vào liên kết bên dưới:"
+      content_2: >
+        Liên kết này sẽ hết hạn sau hai giờ.
+        Nếu bạn không yêu cầu đặt lại mật khẩu của mình,
+        vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ.
+
   users:
     index:
       title: "TẤT CẢ NGƯỜI DÙNG"
@@ -78,7 +107,7 @@ vi:
     create:
       notification: "Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn."
     edit:
-      title: "Chỉnh sửa người dùng"
+      title: "CHỈNH SỬA NGƯỜI DÙNG"
       heading: "Cập nhật hồ sơ của bạn"
       submit: "Lưu thay đổi"
       change: "thay đổi"
