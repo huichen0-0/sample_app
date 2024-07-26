@@ -11,11 +11,7 @@ class UsersController < ApplicationController
 
   # GET /users/1 or /users/1.json
   def show
-    @user = User.find_by id: params[:id]
-    return if @user
-
-    flash[:warning] = t "warning_not_found"
-    redirect_to root_path
+    @page, @microposts = pagy @user.microposts.desc
   end
 
   # GET /users/new
@@ -63,14 +59,6 @@ class UsersController < ApplicationController
 
     flash[:warning] = t "warning_not_found"
     redirect_to root_path
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "warning_login"
-    redirect_to login_url
   end
 
   def correct_user

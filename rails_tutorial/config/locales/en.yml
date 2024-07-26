@@ -44,6 +44,17 @@ en:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
 
+  microposts:
+    micropost:
+      content: "Posted %{time_ago} ago."
+      notice: "Are you sure?"
+    create:
+      success: "Micropost created!"
+    destroy:
+      success: "Micropost deleted!"
+      fail: "Deleted fail!"
+      warning: "Micropost invalid!"
+
   password_resets:
     new:
       title: "FORGOT PASSWORD"
@@ -76,6 +87,12 @@ en:
   shared:
     error_messages:
       errors: "errors"
+    user_info:
+      micropost: "micropost"
+      link: "View my profile"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
 
   static_pages:
     help:
@@ -87,10 +104,12 @@ en:
       ruby_on_rails_tutorial_book: "Ruby on RailsTutorial book"
     home:
       title: "HOME"
-      heading: "Welcome to the Sample App"
+      heading_1: "Welcome to the Sample App"
+      heading_2: "Micropost Feed"
       rails_tutorial_home: "This is the home page for the"
       rails_tutorial_link: "Ruby on Rails Tutorial"
       sample_app: "sample application"
+      error: "Maximum file size is 5MB! Please choose a smaller file."
 
   user_mailer:
     account_activation:

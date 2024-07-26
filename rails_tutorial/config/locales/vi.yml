@@ -24,6 +24,18 @@ vi:
       setting: "Cài đặt"
       log_out: "Đăng xuất"
 
+  microposts:
+    micropost:
+      content: "Đã đăng %{time_ago} trước."
+      delete: "Xóa"
+      notice: "Bạn có chắc không?"
+    create:
+      success: "Bài đăng đã được tạo!"
+    destroy:
+      success: "Xóa bài đăng thành công!"
+      fail: "Xóa bài đăng thất bại!"
+      warning: "Bài đăng không tồn tại!"
+
   password_resets:
     new:
       title: "QUÊN MẬT KHẨU"
@@ -60,7 +72,13 @@ vi:
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu chứa"
-      errors: "lỗi."
+      errors: "lỗi"
+    user_info:
+      link: "Xem hồ sơ của tôi"
+      micropost: "bài đăng"
+    micropost_form:
+      placeholder: "Soạn bài đăng mới..."
+      submit: "Đăng"
 
   static_pages:
     help:
@@ -72,11 +90,13 @@ vi:
       ruby_on_rails_tutorial_book: "sách Hướng dẫn Ruby on Rails"
     home:
       title: "TRANG CHỦ"
-      heading: "Chào mừng đến với ứng dụng mẫu"
+      heading_1: "Chào mừng đến với ứng dụng mẫu"
+      heading_2: "Bài đăng"
       rails_tutorial_home: "Đây là trang chủ của"
       rails_tutorial_link: "Hướng dẫn Ruby on Rails"
       sample_app: "ứng dụng mẫu"
       sign_up_now!: "Đăng ký ngay!"
+      error: "Kích thước tệp tối đa là 5MB! Vui lòng chọn một tập tin nhỏ hơn."
 
   user_mailer:
     account_activation:
@@ -100,6 +120,8 @@ vi:
     index:
       title: "TẤT CẢ NGƯỜI DÙNG"
       heading: "Tất cả người dùng"
+    show:
+      microposts: "Bài đăng"
     new:
       title: "ĐĂNG KÝ"
       heading: "Đăng ký"
@@ -123,12 +145,16 @@ vi:
   activerecord:
     models:
       user: "Người dùng"
+      micropost: "Bài đăng"
     attributes:
       user:
         name: "Tên"
         email: "Email"
         password: "Mật Khẩu"
         password_confirmation: "Xác nhận mật khẩu"
+      micropost:
+        content: "Nội dung"
+        image: "Hình ảnh"
     errors:
       models:
         user:
@@ -146,3 +172,14 @@ vi:
               too_short: "phải tối thiểu 6 ký tự!"
             password_confirmation:
               confirmation: "không khớp với Mật khẩu!"
+        micropost:
+          attributes:
+            content:
+              too_long: "quá dài (tối đa 140 ký tự)"
+              blank: "không được để trống!"
+
+  datetime:
+    distance_in_words:
+      about_x_hours: "khoảng %{count} giờ"
+      less_than_x_minutes: "chưa đầy %{count} phút"
+      x_minutes: "%{count} phút"
