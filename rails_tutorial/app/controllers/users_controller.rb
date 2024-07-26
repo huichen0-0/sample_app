@@ -21,7 +21,7 @@ class UsersController < ApplicationController
 
   # POST /users or /users.json
   def create
-    @user = User.new(user_params)
+    @user = User.new user_params
     if @user.save
       @user.send_activation_email
       flash[:info] = t ".notification"
@@ -51,6 +51,17 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
+  def following
+    @title = "Following"
+    @pagy, @users = pagy @user.following
+    render :show_follow
+  end
+
+  def followers
+    @title = "Followers"
+    @pagy, @users = pagy @user.followers
+    render :show_follow
+  end
   private
   # Use callbacks to share common setup or constraints between actions.
   def find_user
