@@ -13,4 +13,5 @@ class Micropost < ApplicationRecord
                     size: {less_than: Settings.image.size_5.megabytes}
 
   scope :desc, ->{order created_at: :desc}
+  scope :relate_post, ->(user_ids){where user_id: user_ids}
 end

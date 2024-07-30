@@ -32,7 +32,7 @@
 en:
   warning_login: "Please log in!"
   warning_edit: "You cannot edit this account!"
-  warning_not_found: "Not found user!"
+  warning_not_found: "Not found!"
   warning_not_valid: "User is in_activated!"
 
   account_activations:
@@ -152,6 +152,12 @@ en:
       fail: "User deletion failed!"
     user:
       notice: "Are you sure?"
+    follow:
+      submit: "Follow"
+    unfollow:
+      submit: "Unfollow"
+    show_follow:
+      link: "View my profile"
 
   activerecord:
       models:

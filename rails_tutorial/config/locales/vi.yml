@@ -79,6 +79,9 @@ vi:
     micropost_form:
       placeholder: "Soạn bài đăng mới..."
       submit: "Đăng"
+    stats:
+      following: "đang theo dõi"
+      followers: "người theo dõi"
 
   static_pages:
     help:
@@ -141,6 +144,12 @@ vi:
     user:
       delete: "Xóa"
       notice: "Bạn có chắc không?"
+    follow:
+      submit: "Theo dõi"
+    unfollow:
+      submit: "Hủy theo dõi"
+    show_follow:
+      link: "Xem hồ sơ của tôi"
 
   activerecord:
     models:
