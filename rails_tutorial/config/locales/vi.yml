@@ -165,30 +165,60 @@ vi:
         content: "Nội dung"
         image: "Hình ảnh"
     errors:
-      models:
-        user:
-          attributes:
-            name:
-              blank: "không được để trống!"
-              too_long: "của bạn không được dài quá 50 ký tự!"
-            email:
-              blank: "không được để trống!"
-              taken: "đã được sử dụng!"
-              invalid: "không đúng định dạng!"
-              too_long: "của bạn không được vượt quá 255 ký tự!"
-            password:
-              blank: "không được để trống!"
-              too_short: "phải tối thiểu 6 ký tự!"
-            password_confirmation:
-              confirmation: "không khớp với Mật khẩu!"
-        micropost:
-          attributes:
-            content:
-              too_long: "quá dài (tối đa 140 ký tự)"
-              blank: "không được để trống!"
+      messages:
+        record_invalid: "Có các lỗi sau: %{errors}"
+        restrict_dependent_destroy:
+          has_one: Không thể xóa do tồn tại đối tượng phụ thuộc %{record}
+          has_many: Không thể xóa do tồn tại một số đối tượng phụ thuộc %{record}
 
   datetime:
     distance_in_words:
-      about_x_hours: "khoảng %{count} giờ"
-      less_than_x_minutes: "chưa đầy %{count} phút"
+      about_x_hours: khoảng %{count} giờ
+      about_x_months: khoảng %{count} tháng
+      about_x_years: khoảng %{count} năm
+      almost_x_years: gần %{count} năm
+      half_a_minute: 30 giây
+      less_than_x_seconds: chưa tới %{count} giây
+      less_than_x_minutes: chưa tới %{count} phút
+      over_x_years: hơn %{count} năm
+      x_seconds: "%{count} giây"
       x_minutes: "%{count} phút"
+      x_days: "%{count} ngày"
+      x_months: "%{count} tháng"
+    prompts:
+      second: Giây
+      minute: Phút
+      hour: Giờ
+      day: Ngày
+      month: Tháng
+      year: Năm
+
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: phải được đồng ý
+      blank: không thể để trắng
+      confirmation: không khớp với xác nhận
+      empty: không thể rỗng
+      equal_to: phải bằng %{count}
+      even: phải là số chẵn
+      exclusion: đã được giành trước
+      greater_than: phải lớn hơn %{count}
+      greater_than_or_equal_to: phải lớn hơn hoặc bằng %{count}
+      inclusion: không có trong danh sách
+      invalid: không hợp lệ
+      less_than: phải nhỏ hơn %{count}
+      less_than_or_equal_to: phải nhỏ hơn hoặc bằng %{count}
+      not_a_number: không phải là số
+      not_an_integer: phải là một số nguyên
+      odd: phải là số lẻ
+      other_than: cần phải khác %{count}
+      present: cần phải để trắng
+      taken: đã tồn tại
+      too_long: quá dài (tối đa %{count} ký tự)
+      too_short: quá ngắn (tối thiểu %{count} ký tự)
+      wrong_length: độ dài không đúng (phải là %{count} ký tự)
+      required: "phải có"
+    template:
+      body: "Có lỗi với các mục sau:"
+      header: "%{count} lỗi ngăn không cho lưu %{model} này"
